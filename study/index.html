@@ -7,9 +7,9 @@
   <meta name="description" content="컴퓨터네트워크 1장 39개 주제. 개념부터 정답·오답의 이유, 서술형 답안까지. 휴대폰에서 이어서 공부하세요.">
   <title>컴퓨터네트워크 · Joongyu Study</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=20261029-2">
+  <link rel="stylesheet" href="style.css?v=20261029-3">
   <script defer src="data.js?v=20261029-1"></script>
-  <script defer src="app.js?v=20261029-2"></script>
+  <script defer src="app.js?v=20261029-3"></script>
 </head>
 <body>
   <a class="skip" href="#workspace">학습으로 바로가기</a>
@@ -21,6 +21,7 @@
     </section>
     <div class="scope-note"><span class="note-symbol">i</span><div><strong>교재 1장 연습문제 39개 주제에 대응하는 비공식 학습용 풀이입니다.</strong><p>아래 객관식은 개념 확인을 위해 새로 만든 문제예요. 교재 원문은 각 문항의 공식 미리보기에서 확인하세요. 와이어샤크 관련 5문항은 기본 학습에서 제외하고 <button class="text-button" id="extra-shortcut">참고 실습</button>에 모았어요. 출제 확정 목록은 아닙니다.</p></div></div>
     <section id="workspace" class="workspace" aria-label="학습 공간">
+      <nav class="chapter-nav" aria-label="장 선택"><a href="./" aria-current="page">1장 · 교재 주제</a><a href="chapter2.html">2장 · 응용 계층</a><a href="chapter3.html">3장 · 전송 계층</a></nav>
       <div class="view-tabs" role="tablist" aria-label="학습 방식"><button role="tab" id="tab-quiz" aria-controls="quiz-view" aria-selected="true" data-view="quiz">문제 풀기</button><button role="tab" id="tab-read" aria-controls="read-view" aria-selected="false" data-view="read">전체 해설</button><button role="tab" id="tab-cram" aria-controls="cram-view" aria-selected="false" data-view="cram">10분 핵심</button></div>
       <div class="study-layout" id="study-layout">
         <aside class="sidebar"><div class="sidebar-heading"><h2>1장 학습 목록</h2><span id="list-count">34문항</span></div><label class="search-label" for="search">개념 또는 번호 찾기</label><input type="search" id="search" placeholder="IP, 포트, 지연, 38…" autocomplete="off"><div class="filters" aria-label="문제 범위"><button class="active" data-filter="core" aria-pressed="true">기본 34</button><button data-filter="wrong" aria-pressed="false">오답만</button><button data-filter="extra" aria-pressed="false">참고 실습 5</button></div><div class="legend"><span><i class="good-dot"></i> 정답</span><span><i class="bad-dot"></i> 복습 필요</span></div><nav id="question-nav" aria-label="문제 선택"></nav><p class="sidebar-foot">번호는 교재 연습문제와 연결됩니다.<br>선택지는 별도로 만든 복습 문항입니다.</p><button id="reset" class="reset">학습 기록 초기화</button></aside>

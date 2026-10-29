@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="description" content="컴퓨터네트워크 2장 응용 계층 강의 기반 18문항. 개념·정답·오답 이유와 계산 풀이.">
+  <title>컴퓨터네트워크 2장 · Joongyu Study</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=20261029-3">
+  <script defer src="ch2-data.js?v=20261029-3"></script>
+  <script>window.STUDY_CHAPTER=2;</script>
+  <script defer src="app.js?v=20261029-3"></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">학습으로 바로가기</a>
+  <header class="topbar"><a class="brand" href="./"><span class="brand-icon">J</span> joongyu<span class="brand-slash">/</span><strong>study</strong></a><span class="top-meta">컴퓨터네트워크 <span class="dot"></span> 2장</span></header>
+  <main>
+    <section class="hero">
+      <div><p class="eyebrow">COMPUTER NETWORKS · CHAPTER 02</p><h1>2장 응용 계층,<br><span>문제로 이해하기.</span></h1><p class="intro">기초 개념부터 정답과 오답의 이유까지.<br class="desktop-break"> 먼저 문제를 풀고, 해설 보기를 눌러 풀이를 확인하세요.</p><div class="hero-links"><a class="primary-link" href="#workspace">공부 시작하기 <span>↓</span></a><a href="notes.html">1~3장 핵심정리 ↗</a></div></div>
+      <aside class="progress-card" aria-label="학습 현황"><p>나의 학습 현황</p><div class="progress-number"><strong id="solved-count">0</strong><span>/ 18</span></div><p id="progress-label">기본 학습 18문항 중 풀이 완료</p><div class="track"><div id="progress-fill"></div></div><div class="progress-bottom"><span>현재 정답 <b id="correct-count">0</b></span><span>복습할 문제 <b id="wrong-count">0</b></span></div><small id="save-status">이 브라우저에 자동 저장 · 기기 간 동기화 없음</small></aside>
+    </section>
+    <div class="scope-note"><span class="note-symbol">i</span><div><strong>강의자료·영상 내용을 바탕으로 새로 만든 18문항입니다.</strong><p>교재 2~3장 연습문제 원문은 아직 확보하지 못했습니다. 아래 번호는 자체 복습 번호이며 교재 번호와 대응하지 않습니다. 해설에 학습 근거를 적었고, 출제 확정 문제나 공식 답안은 아닙니다. 와이어샤크 조작 실습은 포함하지 않았습니다.</p></div></div>
+    <section id="workspace" class="workspace" aria-label="학습 공간">
+      <nav class="chapter-nav" aria-label="장 선택"><a href="./">1장 · 교재 주제</a><a href="chapter2.html" aria-current="page">2장 · 응용 계층</a><a href="chapter3.html">3장 · 전송 계층</a></nav>
+      <div class="view-tabs" role="tablist" aria-label="학습 방식"><button role="tab" id="tab-quiz" aria-controls="quiz-view" aria-selected="true" data-view="quiz">문제 풀기</button><button role="tab" id="tab-read" aria-controls="read-view" aria-selected="false" data-view="read">전체 해설</button><button role="tab" id="tab-cram" aria-controls="cram-view" aria-selected="false" data-view="cram">10분 핵심</button></div>
+      <div class="study-layout" id="study-layout">
+        <aside class="sidebar"><div class="sidebar-heading"><h2>2장 학습 목록</h2><span id="list-count">18문항</span></div><label class="search-label" for="search">개념 또는 번호 찾기</label><input type="search" id="search" placeholder="쿠키, DNS, 캐시…" autocomplete="off"><div class="filters" aria-label="문제 범위"><button class="active" data-filter="core" aria-pressed="true">기본 18</button><button data-filter="wrong" aria-pressed="false">오답만</button><button data-filter="extra" aria-pressed="false" hidden>참고 실습 0</button></div><div class="legend"><span><i class="good-dot"></i> 정답</span><span><i class="bad-dot"></i> 복습 필요</span></div><nav id="question-nav" aria-label="문제 선택"></nav><p class="sidebar-foot">번호는 자체 복습 번호입니다.<br>교재 연습문제 번호가 아닙니다.</p><button id="reset" class="reset">학습 기록 초기화</button></aside>
+        <div class="content-area"><section id="quiz-view" role="tabpanel" aria-labelledby="tab-quiz"><div id="quiz"></div></section><section id="read-view" role="tabpanel" aria-labelledby="tab-read" hidden><div class="read-heading"><h2>개념부터 서술형 답안까지</h2><p>문항을 열면 개념, 풀이 순서, 답안 예시를 이어서 읽을 수 있어요.</p></div><div id="read-list"></div></section></div>
+      </div>
+      <section id="cram-view" role="tabpanel" aria-labelledby="tab-cram" hidden>
+        <div class="cram-heading"><p class="eyebrow">LAST 10 MINUTES</p><h2>2장 마지막 핵심 여덟 가지</h2><p>2장 강의 기반 복습용입니다. 전체 시험 범위 1~3장은 <a href="notes.html">핵심정리</a>에서 이어 보세요.</p></div>
+        <div class="cram-grid"><article><span>01 / HTTP</span><h3>메서드와 메시지</h3><p>GET 조회 / POST 제출·처리 / PUT 대체 / PATCH 일부 변경 / DELETE 삭제. HTTP/1.1은 시작 줄·헤더·빈 줄·본문으로 읽는다.</p><b>HTTP/2·3까지 같은 텍스트 형식이라고 일반화하지 않기.</b></article><article><span>02 / 상태 코드</span><h3>401 인증, 403 거부, 404 없음</h3><p>200 성공 / 204 본문 없는 성공 / 301·302 이동 / 304 변경 없음 / 500 서버 내부 오류.</p><b>304는 기존 캐시 본문 재사용.</b></article><article><span>03 / 쿠키</span><h3>Set-Cookie 내려옴, Cookie 올라감</h3><p>서버가 세션 식별자를 보내고 브라우저가 적용 대상 요청에 돌려준다. 서버 세션 상태와 쿠키 저장 위치를 구분한다.</p><b>쿠키에 비밀번호 원문이 반드시 들어가는 것은 아님.</b></article><article><span>04 / 캐시</span><h3>ETag → If-None-Match → 304</h3><p>기존 ETag로 조건부 GET을 보내고 같으면 304, 바뀌면 새 본문의 200. CDN은 가까운 서버에서 제공한다.</p><b>쿠키는 상태 정보, 캐시는 자원 재사용.</b></article><article><span>05 / HTTPS</span><h3>기밀성·무결성·서버 인증</h3><p>SNI는 접속하려는 서버 이름, SAN은 인증서에 유효한 이름. 이름·유효기간·신뢰 체인을 검증한다.</p><b>TLS 연결 보호가 판매자의 정직성을 보증하지는 않음.</b></article><article><span>06 / DNS</span><h3>A v4 / AAAA v6 / MX 메일</h3><p>CNAME 별칭 / NS 권한 서버. 재귀 리졸버가 캐시를 확인하고 필요하면 루트→TLD→권한 서버를 따라간다.</p><b>DNS TTL은 캐시 시간. UDP·TCP 53 모두 사용.</b></article><article><span>07 / 메일·포트</span><h3>SMTP 보내기, IMAP 동기화</h3><p>SMTP 25 서버 간 / 587 제출. POP3 110·보호된 연결 995, IMAP 143·보호된 연결 993. HTTP 80, HTTPS 443.</p><b>FTP 제어 21, 데이터 포트는 능동·수동 모드를 구분.</b></article><article><span>08 / 버전</span><h3>HTTP/2 TCP / HTTP/3 QUIC</h3><p>HTTP/2 다중화에도 TCP 손실 HOL은 남는다. QUIC은 UDP 위에서 신뢰성·스트림·보안을 구현한다.</p><b>UDP 기반이라고 QUIC도 신뢰성 없는 비연결인 것은 아님.</b></article></div>
+      </section>
+    </section>
+    <details class="sources"><summary>학습 근거와 확인 범위</summary><p>2장 교안, 교수자 TCP 보충자료, 확보한 강의 영상 자막을 바탕으로 작성한 자체 복습 문제입니다. 강의 영상의 시간은 영상 시작 기준이며 각 해설에서 해당 근거를 확인할 수 있습니다. 자막 오인식은 교안과 계산으로 교정했습니다.</p><p>교재 연습문제 원문·번호·공식 답안과는 다릅니다. 문제의 수치 변형과 선택지는 새로 작성했습니다. TCP 종합 문제는 교수자 보충자료의 수치를 사용했습니다.</p><p>기술 표현 대조: <a href="https://www.rfc-editor.org/rfc/rfc9293.html">TCP</a> · <a href="https://www.rfc-editor.org/rfc/rfc5681.html">혼잡 제어</a> · <a href="https://www.rfc-editor.org/rfc/rfc9000.html">QUIC</a> · <a href="https://www.rfc-editor.org/rfc/rfc9111.html">HTTP 캐시</a>. 이는 출제 확정의 근거가 아닙니다.</p><p>학습 기록은 장별로 이 브라우저에 저장되며 기기 간 동기화는 없습니다.</p></details>
+  </main>
+  <footer>Joongyu Study <span>이해하고, 풀고, 다시 확인하기 · 2026.10.29</span></footer>
+  <noscript><p>문제 풀기에는 JavaScript가 필요합니다. <a href="notes.html">1~3장 핵심정리</a>로 읽을 수 있습니다.</p></noscript>
+</body>
+</html>
