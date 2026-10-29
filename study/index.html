@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="description" content="컴퓨터네트워크 1장 39개 주제. 개념부터 정답·오답의 이유, 서술형 답안까지. 휴대폰에서 이어서 공부하세요.">
+  <title>컴퓨터네트워크 · Joongyu Study</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css?v=20261029-1">
+  <script defer src="data.js?v=20261029-1"></script>
+  <script defer src="app.js?v=20261029-1"></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">학습으로 바로가기</a>
+  <header class="topbar"><a class="brand" href="./"><span class="brand-icon">J</span> joongyu<span class="brand-slash">/</span><strong>study</strong></a><span class="top-meta">컴퓨터네트워크 <span class="dot"></span> 1장</span></header>
+  <main>
+    <section class="hero">
+      <div><p class="eyebrow">COMPUTER NETWORKS · CHAPTER 01</p><h1>정답을 고르고,<br><span>이유까지 이해하기.</span></h1><p class="intro">기초 개념부터 정답과 오답의 이유까지.<br class="desktop-break"> 모르는 부분은 바로 다시 읽고, 틀린 문제만 모아 풀어요.</p><div class="hero-links"><a class="primary-link" href="#workspace">공부 시작하기 <span>↓</span></a><a href="notes.html">1~3장 핵심정리 ↗</a><a href="chapter1-solutions.pdf" target="_blank" rel="noopener">39개 풀이 PDF ↗</a></div></div>
+      <aside class="progress-card" aria-label="학습 현황"><p>나의 학습 현황</p><div class="progress-number"><strong id="solved-count">0</strong><span>/ 34</span></div><p id="progress-label">기본 학습 34문항 중 풀이 완료</p><div class="track"><div id="progress-fill"></div></div><div class="progress-bottom"><span>현재 정답 <b id="correct-count">0</b></span><span>복습할 문제 <b id="wrong-count">0</b></span></div><small id="save-status">이 브라우저에 자동 저장 · 기기 간 동기화 없음</small></aside>
+    </section>
+    <div class="scope-note"><span class="note-symbol">i</span><div><strong>교재 1장 연습문제 39개 주제에 대응하는 비공식 학습용 풀이입니다.</strong><p>아래 객관식은 개념 확인을 위해 새로 만든 문제예요. 교재 원문은 각 문항의 공식 미리보기에서 확인하세요. 와이어샤크 관련 5문항은 기본 학습에서 제외하고 <button class="text-button" id="extra-shortcut">참고 실습</button>에 모았어요. 출제 확정 목록은 아닙니다.</p></div></div>
+    <section id="workspace" class="workspace" aria-label="학습 공간">
+      <div class="view-tabs" role="tablist" aria-label="학습 방식"><button role="tab" id="tab-quiz" aria-controls="quiz-view" aria-selected="true" data-view="quiz">문제 풀기</button><button role="tab" id="tab-read" aria-controls="read-view" aria-selected="false" data-view="read">전체 해설</button><button role="tab" id="tab-cram" aria-controls="cram-view" aria-selected="false" data-view="cram">10분 핵심</button></div>
+      <div class="study-layout" id="study-layout">
+        <aside class="sidebar"><div class="sidebar-heading"><h2>1장 학습 목록</h2><span id="list-count">34문항</span></div><label class="search-label" for="search">개념 또는 번호 찾기</label><input type="search" id="search" placeholder="IP, 포트, 지연, 38…" autocomplete="off"><div class="filters" aria-label="문제 범위"><button class="active" data-filter="core" aria-pressed="true">기본 34</button><button data-filter="wrong" aria-pressed="false">오답만</button><button data-filter="extra" aria-pressed="false">참고 실습 5</button></div><div class="legend"><span><i class="good-dot"></i> 정답</span><span><i class="bad-dot"></i> 복습 필요</span></div><nav id="question-nav" aria-label="문제 선택"></nav><p class="sidebar-foot">번호는 교재 연습문제와 연결됩니다.<br>선택지는 별도로 만든 복습 문항입니다.</p><button id="reset" class="reset">학습 기록 초기화</button></aside>
+        <div class="content-area"><section id="quiz-view" role="tabpanel" aria-labelledby="tab-quiz"><div id="quiz"></div></section><section id="read-view" role="tabpanel" aria-labelledby="tab-read" hidden><div class="read-heading"><h2>개념부터 서술형 답안까지</h2><p>문항을 열면 개념, 풀이 순서, 답안 예시를 이어서 읽을 수 있어요.</p></div><div id="read-list"></div></section></div>
+      </div>
+      <section id="cram-view" role="tabpanel" aria-labelledby="tab-cram" hidden>
+        <div class="cram-heading"><p class="eyebrow">LAST 10 MINUTES</p><h2>이유와 함께 기억할 여덟 가지</h2><p>1장 개념 복습용입니다. 전체 시험 범위 1~3장은 <a href="notes.html">핵심정리</a>에서 이어 보세요.</p></div>
+        <div class="cram-grid">
+          <article><span>01 / 주소</span><h3>IP는 목적지, MAC은 다음 전달 대상</h3><p>원격 서버로 보낼 때 목적지 IP는 서버, 첫 프레임의 목적지 MAC은 게이트웨이. 포트는 호스트 안의 통신 종점을 구분한다.</p><b>라우터마다 MAC은 바뀌어도 종단 IP는 보통 유지. NAT는 예외.</b></article>
+          <article><span>02 / 계층</span><h3>세그먼트 → 패킷 → 프레임</h3><p>응용 데이터를 TCP 세그먼트에, 세그먼트를 IP 패킷에, 패킷을 링크 프레임에 넣는다. 수신은 역순이다.</p><b>스위치는 MAC, 라우터는 IP를 기준으로 전달.</b></article>
+          <article><span>03 / 단위</span><h3>200 Mbps ÷ 8 = 25 MB/s</h3><p>1 byte는 8 bit. b와 B를 구분한다. 회선 속도는 실제 파일 처리량의 보장이 아니다.</p><b>bit → byte는 ÷8. 반대는 ×8.</b></article>
+          <article><span>04 / 성능</span><h3>대역폭이 넓어도 지연은 클 수 있다</h3><p>전송 지연은 L/R, 전파 지연은 d/v. 큐잉·처리 지연도 있다. 실시간 통신은 지터와 손실도 중요하다.</p><b>많이 보낼 수 있는가 ≠ 빨리 도착하는가.</b></article>
+          <article><span>05 / ping</span><h3>ICMP 성공이 웹 성공은 아니다</h3><p>ping은 도달성과 RTT의 단서다. 웹은 DNS, TCP 또는 QUIC, TLS, HTTP도 통과해야 한다.</p><b>ping 실패도 ICMP 차단 때문일 수 있다.</b></article>
+          <article><span>06 / tracert</span><h3>한 홉의 RTT는 내 PC 기준 왕복 시간</h3><p>바로 앞 홉과의 구간 지연이 아니다. 별표는 탐색 응답을 못 받았다는 뜻이며 단선 확정은 아니다.</p><b>한 홉만 느림과 이후 홉도 계속 느림을 구분.</b></article>
+          <article><span>07 / DNS</span><h3>이름 문제와 연결 문제를 나눠 보기</h3><p>IP는 되는데 이름을 못 찾으면 nslookup. IP가 여러 개 나오는 것은 CDN·부하 분산일 수 있다.</p><b>DNS 정상이어도 포트·TLS·앱은 따로 확인.</b></article>
+          <article><span>08 / 서술형</span><h3>결론 → 이유 → 확인 방법 → 한계</h3><p>“게이트웨이는 되지만 외부 IP가 실패하므로 WAN·경로·정책을 조사한다. 다른 목적지와 앱도 비교하며 ICMP 차단 가능성은 남겨 둔다.”</p><b>무조건·항상으로 단정하기보다 근거로 범위를 좁히기.</b></article>
+        </div>
+      </section>
+    </section>
+    <details class="sources"><summary>교재 원문·기술 확인 자료</summary><p>진혜진, 『컴퓨터 네트워크: 와이어샤크, 패킷 트레이서와 함께하는』(한빛아카데미, 2026), 1장 연습문제 주제와 번호를 기준으로 작성한 자체 해설입니다. 출판사·교수자의 공식 답안이나 채점 기준은 아닙니다.</p><ul><li>공식 미리보기: <a href="https://preview2.hanbit.co.kr/books/lalc/#p=26" target="_blank" rel="noopener">1~17번</a> · <a href="https://preview2.hanbit.co.kr/books/lalc/#p=27" target="_blank" rel="noopener">18~29번</a> · <a href="https://preview2.hanbit.co.kr/books/lalc/#p=28" target="_blank" rel="noopener">30~39번</a></li><li>Microsoft Learn: <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ping">ping</a> · <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/tracert">tracert</a> · <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ipconfig">ipconfig</a> · <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup">nslookup</a> · <a href="https://learn.microsoft.com/en-us/powershell/module/nettcpip/test-netconnection">Test-NetConnection</a></li><li>프로토콜: <a href="https://www.rfc-editor.org/rfc/rfc791.html">IPv4 · RFC 791</a> · <a href="https://www.rfc-editor.org/rfc/rfc826">ARP · RFC 826</a></li><li>참고 실습: Wireshark <a href="https://wiki.wireshark.org/captureFilters">캡처 필터</a> · <a href="https://www.wireshark.org/docs/man-pages/wireshark-filter">표시 필터</a></li></ul><p>39번은 실험 설계 예시이며 실제 측정 결과가 아닙니다. 학습 기록은 현재 브라우저에만 저장됩니다.</p></details>
+  </main>
+  <footer>Joongyu Study <span>이해하고, 풀고, 다시 확인하기 · 2026.10.29</span></footer>
+  <noscript><p>문제 풀기에는 JavaScript가 필요합니다. <a href="chapter1-solutions.pdf">전체 풀이 PDF</a>로 읽을 수 있습니다.</p></noscript>
+</body>
+</html>
